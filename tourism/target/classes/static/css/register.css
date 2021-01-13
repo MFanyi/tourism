@@ -1,0 +1,9 @@
+body {
+    background-image: url("../img/register.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+label {
+    color: white;
+}

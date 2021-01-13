@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="#">
+    <meta name="description" content="#">
+
+    <title>旅游网</title>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Flaticons -->
+    <link href="assets/css/font/flaticon.css" rel="stylesheet">
+    <!-- Slick Slider -->
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <!-- Range Slider -->
+    <link href="assets/css/ion.rangeSlider.min.css" rel="stylesheet">
+    <!-- Datepicker -->
+    <link href="assets/css/datepicker.css" rel="stylesheet">
+    <!-- magnific popup -->
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <!-- Nice Select -->
+    <link href="assets/css/nice-select.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Custom Responsive -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+<!-- Start Header -->
+<header class="header">
+    <!-- Topbar -->
+    <div class="topbar bg-custom-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="left-side">
+                        <ul class="custom-flex">
+                            <li>
+                                <h4 class="text-custom-white">哈黑智慧旅游服务平台</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="right-side" id="user">
+                        <ul class="custom-flex">
+                            <li>
+                                <a href="user/login.html" class="text-custom-white">登录</a>
+                            </li>
+                            <li>
+                                <a href="user/register.html" class="text-custom-white">注册</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-side" id="userLogin">
+                        <ul class="custom-flex">
+                            <li>
+                                <a href="" class="text-custom-white" id="username">欢迎您,携程用户</a>
+                            </li>
+                            <li style="width: 50px;height: 50px;border-radius:5px">
+                                <img src="" class="img-circle " alt="头像" id="user-img"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <div class="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-navigation">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/images/index.png" class="img-fluid image-fit" alt="img">
+                            </a>
+                        </div>
+                        <div class="main-menu">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/index.png" class="img-fluid image-fit" alt="img">
+                                </a>
+                            </div>
+                            <nav>
+                                <ul class="custom-flex">
+                                    <li class="menu-item">
+                                        <a href="index.html" class="text-light-dark">首页</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="hotel-left-sidebar.html" class="text-light-dark">酒店</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" class="text-light-dark">行程</a>
+                                        <ul class="custom sub-menu">
+                                            <li class="menu-item">
+                                                <a href="area.html" class="text-custom-white">热门景区推荐</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="car-detail.html" class="text-custom-white">制定出行路线</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" class="text-light-dark">门票</a>
+                                        <ul class="custom sub-menu">
+                                            <li class="menu-item">
+                                                <a href="#" class="text-custom-white">景区门票</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" class="text-light-dark">更多</a>
+                                        <ul class="custom sub-menu">
+                                            <li class="menu-item">
+                                                <a href="about.html" class="text-custom-white">关于我们</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="contact.html" class="text-custom-white">联系我们</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="faqs.html" class="text-custom-white">常见问题</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="booking.html" class="text-custom-white">订票</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="cta-btn">
+                                <a href="booking.html" class="btn-first btn-submit">立即出行</a>
+                            </div>
+                        </div>
+                        <div class="hamburger-menu">
+                            <div class="menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End Header -->
+<!-- Start Slider -->
+<div class="slider p-relative">
+    <div class="main-banner arrow-layout-1 ">
+        <div class="slide-item">
+            <img src="assets/images/flight-2.jpg" class="image-fit" alt="Slider">
+            <div class="transform-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="slider-content">
+                                <h1 class="text-custom-white">开启 <span class="text-custom-blue">龙江</span> 之旅</h1>
+                                <ul class="custom">
+                                    <li class="text-custom-white">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        超过500个热门景点
+                                    </li>
+                                    <li class="text-custom-white">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        上万条用户评论
+                                    </li>
+                                    <li class="text-custom-white">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        最智能的路线规划
+                                    </li>
+                                    <li class="text-custom-white">
+                                        <i class="fas fa-comments"></i>
+                                        24小时客户服务
+                                    </li>
+                                </ul>
+                                <a href="area.html" class="btn-first btn-small">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <img src="assets/images/hotel-1.jpg" class="image-fit" alt="Slider">
+            <div class="transform-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="slider-content">
+                                <h1 class="text-custom-white">最好的 <span class="text-custom-blue">酒店</span>民宿</h1>
+                                <ul class="custom">
+                                    <li class="text-custom-white">
+                                        <i class="fas fa-building"></i>
+                                        超过1000家酒店信息
+                                    </li>
+                                    <li class="text-custom-white">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        上万条用户评论
+                                    </li>
+                                    <li class="text-custom-white">
+                                        <i class="fas fa-dollar-sign"></i>
+                                        最完美的价格
+                                    </li>
+                                    <li class="text-custom-white">
+                                        <i class="fas fa-comments"></i>
+                                        24小时客户服务
+                                    </li>
+                                </ul>
+                                <a href="hotels.html" class="btn-first btn-small">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <img src="assets/images/car-1.jpg" class="image-fit" alt="Slider">
+            <div class="transform-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="slider-content">
+                                <h1 class="text-custom-white">最符合您的 <span class="text-custom-blue">路线</span> 规划</h1>
+                                <ul class="custom">
+                                    <li class="text-custom-white">
+                                        <i class="fas fa-car"></i>
+                                        最优质的行程
+                                    </li>
+                                    <li class="text-custom-white">
+                                        <i class="fas fa-dollar-sign"></i>
+                                        最高的性价比
+                                    </li>
+                                    <li class="text-custom-white">
+                                        <i class="fas fa-laptop"></i>
+                                        最便捷的购票
+                                    </li>
+                                    <li class="text-custom-white">
+                                        <i class="fas fa-comments"></i>
+                                        24小时客户服务
+                                    </li>
+                                </ul>
+                                <a href="#flights" class="btn-first btn-small">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="banner-tabs">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="tabs">
+                    <ul class="custom-flex nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#hotel">预定酒店</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#flights">规划路线</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content bg-custom-white bx-wrapper padding-20">
+                        <div class="tab-pane active" id="hotel">
+                            <div class="tab-inner">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="form-group">
+                                                <label class="fs-14 text-custom-black fw-500">目的地</label>
+                                                <input type="text" name="#" class="form-control form-control-custom"
+                                                       placeholder="请输入您的目的地">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label class="fs-14 text-custom-black fw-500">入住时间</label>
+                                                        <div class="input-group group-form">
+                                                            <input type="text" name="#"
+                                                                   class="form-control form-control-custom datepickr"
+                                                                   placeholder="年/月/日" readonly>
+                                                            <span class="input-group-append">
+                                                                  <i class="far fa-calendar"></i>
+                                                              </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label class="fs-14 text-custom-black fw-500">离店时间</label>
+                                                        <div class="input-group group-form">
+                                                            <input type="text" name="#"
+                                                                   class="form-control form-control-custom datepickr"
+                                                                   placeholder="年/月/日" readonly>
+                                                            <span class="input-group-append">
+                                                                  <i class="far fa-calendar"></i>
+                                                              </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <label class="fs-14 text-custom-black fw-500">房间</label>
+                                                        <div class="group-form">
+                                                            <select class="custom-select form-control form-control-custom">
+                                                                <option>01</option>
+                                                                <option>02</option>
+                                                                <option>03</option>
+                                                                <option>04</option>
+                                                                <option>05</option>
+                                                                <option>更多</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <label class="fs-14 text-custom-black fw-500">成人</label>
+                                                        <div class="group-form">
+                                                            <select class="custom-select form-control form-control-custom">
+                                                                <option>01</option>
+                                                                <option>02</option>
+                                                                <option>03</option>
+                                                                <option>04</option>
+                                                                <option>05</option>
+                                                                <option>更多</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <label class="fs-14 text-custom-black fw-500">儿童</label>
+                                                        <div class="group-form">
+                                                            <select class="custom-select form-control form-control-custom">
+                                                                <option>01</option>
+                                                                <option>02</option>
+                                                                <option>03</option>
+                                                                <option>04</option>
+                                                                <option>05</option>
+                                                                <option>更多</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-6">
+                                            <label class="submit"></label>
+                                            <button type="submit" class="btn-first btn-submit full-width btn-height">
+                                                立即预定
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="flights">
+                            <div class="tab-inner">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="form-group">
+                                                <label class="fs-14 text-custom-black fw-500">出发地</label>
+                                                <input type="text" name="#" class="form-control form-control-custom"
+                                                       placeholder="请输入您的出发地">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="fs-14 text-custom-black fw-500">目的地</label>
+                                                <input type="text" name="#" class="form-control form-control-custom"
+                                                       placeholder="请输入您的目的地">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label class="fs-14 text-custom-black fw-500">出发日期</label>
+                                                        <div class="input-group group-form">
+                                                            <input type="text" name="#"
+                                                                   class="form-control form-control-custom datepickr"
+                                                                   placeholder="年/月/日" readonly>
+                                                            <span class="input-group-append">
+                                                                  <i class="far fa-calendar"></i>
+                                                              </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label class="submit"></label>
+                                                        <div class="group-form">
+                                                            <select class="custom-select form-control form-control-custom">
+                                                                <option>00:00-6:00</option>
+                                                                <option>6:00-11:00</option>
+                                                                <option>11:00-13:00</option>
+                                                                <option>13:00-18:00</option>
+                                                                <option>18:00-00:00</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label class="fs-14 text-custom-black fw-500">到达日期</label>
+                                                        <div class="input-group group-form">
+                                                            <input type="text" name="#"
+                                                                   class="form-control form-control-custom datepickr"
+                                                                   placeholder="年/月/日" readonly>
+                                                            <span class="input-group-append">
+                                                                  <i class="far fa-calendar"></i>
+                                                              </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label class="submit"></label>
+                                                        <div class="group-form">
+                                                            <select class="custom-select form-control form-control-custom">
+                                                                <option>00:00-6:00</option>
+                                                                <option>6:00-11:00</option>
+                                                                <option>11:00-13:00</option>
+                                                                <option>13:00-18:00</option>
+                                                                <option>18:00-00:00</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label class="fs-14 text-custom-black fw-500">出行人数</label>
+                                                        <div class="group-form">
+                                                            <select class="custom-select form-control form-control-custom">
+                                                                <option>01</option>
+                                                                <option>02</option>
+                                                                <option>03</option>
+                                                                <option>04</option>
+                                                                <option>05</option>
+                                                                <option>更多</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label class="submit"></label>
+                                                        <button class="btn-first btn-submit full-width btn-height">
+                                                            搜索
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--推荐酒店-->
+<section class="section-padding hotels-sec bg-light-white">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-heading">
+                <h3 class="text-custom-black">推荐酒店</h3>
+                <div class="section-description">
+                    <p class="text-light-dark">为您的旅行安排一次满意的住宿</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="hotel-slider arrow-layout-2 row">
+                    <div class="slide-item col-12">
+                        <div class="hotel-grid">
+                            <div class="hotel-grid-wrapper bx-wrapper">
+                                <div class="image-sec animate-img">
+                                    <a href="hotel-detail.html">
+                                        <img src="assets/images/hotels/1.png" class="full-width" alt="img">
+                                    </a>
+                                </div>
+                                <div class="hotel-grid-caption padding-20 bg-custom-white p-relative">
+                                    <h4 class="title fs-16"><a href="hotel-detail.html" class="text-custom-black">Hotel
+                                        Hilton<small class="text-light-dark">Paris france</small></a></h4>
+                                    <span class="price"><small>avg/night</small>$520</span>
+                                    <div class="action">
+                                        <a class="btn-second btn-small" href="hotel-detail.html">View</a>
+                                        <a class="btn-first btn-submit" href="booking.html">Book</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--推荐景区-->
+<section class="section-padding cruise-sec">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-heading">
+                <h3 class="text-custom-black">推荐景区</h3>
+                <div class="section-description">
+                    <p class="text-light-dark">为您推荐热度较高的景区</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="hotel-slider arrow-layout-2 row" id="area">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--页脚-->
+<footer class="section-padding footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box mb-md-40">
+                    <h4 class="text-custom-white fw-600">数据来源</h4>
+                    <p class="text-custom-white">携程网</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box mb-md-40">
+                    <h4 class="text-custom-white fw-600">链接</h4>
+                    <ul class="custom links">
+                        <li>
+                            <a href="index.html" class="text-custom-white">主页</a>
+                        </li>
+                        <li>
+                            <a href="hotels.html" class="text-custom-white">酒店</a>
+                        </li>
+                        <li>
+                            <a href="area.html" class="text-custom-white">景点</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box mb-sm-40">
+                    <h4 class="text-custom-white fw-600">联系我们</h4>
+                    <div class="newsletter">
+                        <p class="text-custom-white">本平台仅供学习参考使用,如有侵权请联系我们</p>
+                    </div>
+                    <div class="newsletter">
+                        <p class="text-custom-white">1759269294@qq.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--结尾-->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-custom-white">哈尔滨商业大学 孟凡轶</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--回顶部-->
+<div id="back-top" class="back-top">
+    <a href="#top"><i class="flaticon-arrows"></i></a>
+</div>
+<!-- Place all Scripts Here -->
+<!-- jQuery -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Popper -->
+<script src="bootstrap/js/popper.min.js"></script>
+<!-- Bootstrap -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Range Slider -->
+<script src="assets/js/ion.rangeSlider.min.js"></script>
+<!-- Slick Slider -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Datepicker -->
+<script src="assets/js/datepicker.js"></script>
+<script src="assets/js/datepicker.en.js"></script>
+<!-- Isotope Gallery -->
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<!-- Nice Select -->
+<script src="assets/js/jquery.nice-select.js"></script>
+<!-- magnific popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- Custom Js -->
+<script src="assets/js/custom.js"></script>
+<script src="js/head.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

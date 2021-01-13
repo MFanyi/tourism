@@ -1,0 +1,46 @@
+server:
+  port: 8080
+
+mybatis:
+  typeAliasesPackage: com.shangda.tourism.model
+  mapperLocations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+spring:
+  mvc:
+    static-path-pattern: /**
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/tourism?serverTimezone=UTC&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 1759269294@qq.com
+    password: tgazgpfppvnrciad
+    protocol: smtps
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+            port: 465
+          ssl:
+            enable: true
+
+  thymeleaf:
+    cache: false
+
+
+tourism:
+  path:
+    domain: http://localhost:8080

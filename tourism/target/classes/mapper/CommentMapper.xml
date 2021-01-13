@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shangda.tourism.dao.CommentDao">
+    <sql id="selectFields">
+        id,user_id,area_id,content,image_src,create_time,image_thumb,score_area,score_interest,score_cost
+    </sql>
+    <sql id="insertFields">
+        user_id,area_id,content,image_src,create_time,image_thumb,score_area,score_interest,score_cost
+    </sql>
+    <select id="selectCommentByAreaId" resultType="com.shangda.tourism.model.Comment">
+        select <include refid="selectFields"></include>
+        from comment where area_id = #{areaId}
+    </select>
+</mapper>
