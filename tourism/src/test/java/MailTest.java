@@ -14,19 +14,19 @@ import javax.annotation.Resource;
 @SpringBootTest
 @ContextConfiguration(classes = TourismApplication.class)
 public class MailTest {
-    @Resource
-    private MailUtil mailUtil;
-
-    @Resource
-    private TemplateEngine templateEngine;
-
-    @Test
-    public void testHtmlMail() {
-        Context context = new Context();
-        context.setVariable("username", "sunday");
-
-        String content = templateEngine.process("mail/activation", context);
-        System.out.println(content);
-        mailUtil.sendMail("1263408260@qq.com", "Html", content);
-    }
+//    @Resource
+//    private MailUtil mailUtil;
+//
+//    @Resource
+//    private TemplateEngine templateEngine;
+//
+//    @Test
+//    public void testHtmlMail() {
+//        Context context = new Context();
+//        context.setVariable("username", "sunday");
+//
+//        String content = templateEngine.process("mail/activation", context);
+//        System.out.println(content);
+//        mailUtil.sendMail("1263408260@qq.com", "Html", content);
+//    }
 }

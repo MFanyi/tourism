@@ -78,13 +78,11 @@ public class MapperTest {
 //        System.out.println(area.getName());
 //    }
 
-    @Test
-    public void selectUserEmail(){
-        List<Hotel> list = hotelDao.selectHotel();
-        for(Hotel hotel : list){
-            System.out.println(hotel.getHotelName());
-        }
-    }
-
-
+//    @Test
+//    public void selectUserEmail(){
+//        List<Hotel> list = hotelDao.selectHotel();
+//        for(Hotel hotel : list){
+//            System.out.println(hotel.getHotelName());
+//        }
+//    }
 }

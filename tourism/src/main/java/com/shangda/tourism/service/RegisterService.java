@@ -83,7 +83,7 @@ public class RegisterService {
         context.setVariable("name", user.getName());
         String url = domain + "/user/success.html?userId=" + user.getId() + "&code=" + user.getActivationCode();
         context.setVariable("url", url);
-        String content = templateEngine.process("/mail/activation", context);
+        String content = templateEngine.process("mail/activation", context);
         executorService.execute(() -> mailUtil.sendMail(user.getEmail(), "激活账号", content));
 
         return map;

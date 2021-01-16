@@ -15,27 +15,27 @@ import java.io.IOException;
 @SpringBootTest
 @ContextConfiguration(classes = TourismApplication.class)
 public class CommentTest {
-    String url;
-
-    @Test
-    public void insertcomment() {
-        for (int i = 1; i < 2; i++) {
-            url = "https://you.ctrip.com/sight/haerbin151/s0-p" + i + ".html#sightname";
-            try {
-                Document root = Jsoup.connect(url).get();
-                Element body = root.body();
-                Elements rdetailbox = body.getElementsByClass("rdetailbox");
-                for(Element el : rdetailbox){
-                    Element a = el.getElementsByTag("a").get(0);
-                    Element li = el.getElementsByTag("li").get(2);
-                    String comment = li.getElementsByTag("a").get(0).attr("href");
-                    String text = li.getElementsByTag("a").get(0).text();
-                    System.out.println(comment);
-                    System.out.println(text);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
+//    String url;
+//
+//    @Test
+//    public void insertcomment() {
+//        for (int i = 1; i < 2; i++) {
+//            url = "https://you.ctrip.com/sight/haerbin151/s0-p" + i + ".html#sightname";
+//            try {
+//                Document root = Jsoup.connect(url).get();
+//                Element body = root.body();
+//                Elements rdetailbox = body.getElementsByClass("rdetailbox");
+//                for(Element el : rdetailbox){
+//                    Element a = el.getElementsByTag("a").get(0);
+//                    Element li = el.getElementsByTag("li").get(2);
+//                    String comment = li.getElementsByTag("a").get(0).attr("href");
+//                    String text = li.getElementsByTag("a").get(0).text();
+//                    System.out.println(comment);
+//                    System.out.println(text);
+//                }
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//    }
 }
