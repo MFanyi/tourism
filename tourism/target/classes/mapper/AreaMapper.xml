@@ -11,7 +11,7 @@
     </select>
 
     <select id="selectHotArea" resultType="com.shangda.tourism.model.Area">
-        select * from area order by comment_num desc limit 5;
+        select * from area order by comment_num desc limit 4;
     </select>
 
     <select id="selectThisArea" resultType="com.shangda.tourism.model.Area">

@@ -25,4 +25,11 @@ public class HotelService {
         map.put("hotels",pageInfo);
         return map;
     }
+
+    public Map<String,Object> findHotHotels(){
+        Map<String,Object> map = new HashMap<>();
+        List<Hotel> hotels = hotelDao.selectHotHotel();
+        map.put("hotHotels",hotels);
+        return map;
+    }
 }

@@ -85,4 +85,13 @@ public class MapperTest {
 //            System.out.println(hotel.getHotelName());
 //        }
 //    }
+
+    @Test
+    public void selectHotHotel(){
+        List<Hotel> list = hotelDao.selectHotHotel();
+        for(Hotel hotel : list){
+            System.out.println(hotel.getHotelName());
+            System.out.println(hotel.getId());
+        }
+    }
 }

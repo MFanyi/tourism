@@ -1,5 +1,5 @@
 $(function () {
-    var pageNum = getUrlParam("pageNum");
+    var pageNum = getUrlParam("pageNum"); 
     var row = 5;
     if (pageNum == null) {
         pageNum = 1;

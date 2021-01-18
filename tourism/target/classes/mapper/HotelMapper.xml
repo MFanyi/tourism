@@ -4,4 +4,7 @@
     <select id="selectHotel" resultType="com.shangda.tourism.model.Hotel">
         select * from hotel
     </select>
+    <select id="selectHotHotel" resultType="com.shangda.tourism.model.Hotel">
+        select * from hotel order by comment_num desc limit 4;
+    </select>
 </mapper>

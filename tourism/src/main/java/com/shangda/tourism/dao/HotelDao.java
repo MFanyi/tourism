@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface HotelDao {
     List<Hotel> selectHotel();
+
+    List<Hotel> selectHotHotel();
 }

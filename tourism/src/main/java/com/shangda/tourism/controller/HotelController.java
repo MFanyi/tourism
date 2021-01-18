@@ -14,9 +14,15 @@ public class HotelController {
     @Resource
     private HotelService hotelService;
 
-    @RequestMapping(path = "hotel",method = RequestMethod.GET)
-    public String findAllHotels(Integer pageNum,Integer row){
-        Map<String,Object> map = hotelService.findHotels(pageNum,row);
-        return JSONUtil.getJSONString(0,"success",map);
+    @RequestMapping(path = "hotel", method = RequestMethod.GET)
+    public String findAllHotels(Integer pageNum, Integer row) {
+        Map<String, Object> map = hotelService.findHotels(pageNum, row);
+        return JSONUtil.getJSONString(0, "success", map);
+    }
+
+    @RequestMapping(path = "hotHotels", method = RequestMethod.GET)
+    public String findHotHotels() {
+        Map<String, Object> map = hotelService.findHotHotels();
+        return JSONUtil.getJSONString(0, "success", map);
     }
 }

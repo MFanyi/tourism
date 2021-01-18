@@ -5,11 +5,11 @@ import java.util.Date;
 public class Hotel {
     private int id;
     private String hotelName;
-    private String price;
+    private int price;
     private String picture;
     private String address;
     private String city;
-    private String commentNum;
+    private int commentNum;
     private String comment;
     private Date createTime;
     private String scoreLocation;
@@ -33,11 +33,11 @@ public class Hotel {
         this.hotelName = hotelName;
     }
 
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
@@ -65,11 +65,11 @@ public class Hotel {
         this.city = city;
     }
 
-    public String getCommentNum() {
+    public int getCommentNum() {
         return commentNum;
     }
 
-    public void setCommentNum(String commentNum) {
+    public void setCommentNum(int commentNum) {
         this.commentNum = commentNum;
     }
 
