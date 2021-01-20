@@ -5,7 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import java.util.Map;
 
 public class JSONUtil {
-    public static String getJSONString(int code, String msg, Map<String, Object> map) {
+    public static String getJSONString(Integer code, String msg, Map<String, Object> map) {
         JSONObject json = new JSONObject();
         json.put("code", code);
         json.put("msg", msg);
@@ -23,5 +23,9 @@ public class JSONUtil {
 
     public static String getJSONString(int code){
         return getJSONString(code,null,null);
+    }
+
+    public static String getJSONString(Map<String, Object> map){
+        return getJSONString(null,null,map);
     }
 }

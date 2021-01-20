@@ -8,6 +8,7 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -19,8 +20,9 @@ public class LoginInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        String code = CookieUtil.getCookie(request, "ticket");
-        if (code != null) {
+        Cookie cookie = CookieUtil.getCookie(request, "ticket");
+        if (cookie != null) {
+            String code = cookie.getValue();
             User user = userDao.selectByCode(code);
             HttpSession session = request.getSession();
             session.setAttribute("user", user);

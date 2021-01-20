@@ -2,6 +2,7 @@ package com.shangda.tourism.service;
 
 import com.shangda.tourism.dao.UserDao;
 import com.shangda.tourism.model.User;
+import com.shangda.tourism.util.CookieUtil;
 import com.shangda.tourism.util.TourismUtil;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
@@ -21,7 +22,7 @@ public class LoginService {
 
     public Map<String, Object> login(String username, String password,
                                      HttpServletRequest request, HttpServletResponse response,
-                                     Boolean remember) {
+                                     String remember) {
         HashMap<String, Object> map = new HashMap<>();
 
         //验证传入数据
@@ -53,7 +54,7 @@ public class LoginService {
             map.put("msg", "密码错误");
             return map;
         }
-        if (remember.equals(true)) {
+        if (remember.equals("true")) {
             Cookie cookie = new Cookie("ticket", user.getActivationCode());
             cookie.setMaxAge(3 * 24 * 60 * 60);
             response.addCookie(cookie);
@@ -73,6 +74,18 @@ public class LoginService {
             map.put("userName",user.getName());
             map.put("userImg",user.getHeaderUrl());
         }
+        return map;
+    }
+
+    public Map<String,Object> loginOut(HttpServletRequest request){
+        Cookie cookie = CookieUtil.getCookie(request,"ticket");
+        Map<String,Object> map = new HashMap<>();
+        if(cookie != null){
+            cookie.setMaxAge(0);
+            map.put("code",0);
+            return map;
+        }
+        map.put("code",1);
         return map;
     }
 }

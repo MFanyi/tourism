@@ -21,10 +21,10 @@ public class LoginController {
     private LoginService loginService;
 
     @RequestMapping(path = "login", method = RequestMethod.POST)
-    public String login(String username, String password, boolean remember,
+    public String login(String username, String password, String remember,
                         HttpServletRequest request, HttpServletResponse response) {
         Map<String, Object> map = loginService.login(username, password, request, response, remember);
-        return JSONUtil.getJSONString((int) map.get("code"), (String) map.get("msg"));
+        return JSONUtil.getJSONString(map);
     }
 
     @RequestMapping(path = "loginUser", method = RequestMethod.GET)
@@ -35,5 +35,11 @@ public class LoginController {
         }else {
             return JSONUtil.getJSONString(1,"没有获取到用户数据");
         }
+    }
+
+    @RequestMapping(path = "loginOut",method = RequestMethod.GET)
+    public String loginOut(HttpServletRequest request){
+        Map<String,Object> map = loginService.loginOut(request);
+        return JSONUtil.getJSONString(map);
     }
 }

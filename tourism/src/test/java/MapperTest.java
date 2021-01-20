@@ -1,14 +1,9 @@
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import com.shangda.tourism.TourismApplication;
 import com.shangda.tourism.dao.AreaDao;
 import com.shangda.tourism.dao.CommentDao;
 import com.shangda.tourism.dao.HotelDao;
 import com.shangda.tourism.dao.UserDao;
-import com.shangda.tourism.model.Area;
-import com.shangda.tourism.model.Comment;
 import com.shangda.tourism.model.Hotel;
-import com.shangda.tourism.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
